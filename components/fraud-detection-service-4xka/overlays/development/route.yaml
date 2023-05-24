@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: fraud-detection-service-4xka
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: fraud-detection-service-4xka
+    app.kubernetes.io/part-of: fraud-detection-service
+  name: fraud-detection-service-4xka
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: fraud-detection-service-4xka
+    weight: null
+status: {}
