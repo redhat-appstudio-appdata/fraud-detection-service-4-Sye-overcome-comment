@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: fraud-detection-service-4xka
     app.kubernetes.io/part-of: fraud-detection-service
-  name: fraud-detection-service-4u3cl
+  name: fraud-detection-service-4is17
 spec:
   path: /
   port:
