@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: fraud-detection-service
   name: fraud-detection-service-4xka
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: fraud-detection-service-4xka
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads/cchase-tenant/fraud-detection-service/fraud-detection-service-4xka@sha256:57a5305f507352d4e3f313f62c7ca53e75729079445faa86f65c235bf8373913
         name: my-python
         ports:
         - containerPort: 8081
